@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class swea1244 {
+public class Swea1244 {
 	static int change, maxNum;
 	static char[] numbers;
 	static Set<String> visited;
