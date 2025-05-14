@@ -5,7 +5,8 @@ import java.util.*;
 
 
 public class Swea1859 {
-	static int start, end, sum, buy, count;
+	static int start, end, count;
+	static long sum, buy;
 	static int[] days;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +19,8 @@ public class Swea1859 {
 			for(int i = 0; i < N; i++) {
 				days[i] = Integer.parseInt(st.nextToken());
 			}
-			start = sum = 0;
+			start = 0;
+			sum = 0;
 			end = N-1;
 			while(start < N) {
 				buy = count = 0;
