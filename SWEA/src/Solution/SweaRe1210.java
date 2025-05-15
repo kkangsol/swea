@@ -39,6 +39,7 @@ public class SweaRe1210 {
 		bw.close();
 	}
 	static boolean go(int y, int x) {
+		visited[y][x] = true;
 		while(y < 99) {
 			if(x+1 < 100 && map[y][x+1] == 1 && !visited[y][x+1]) dir = 1;
 			else if(x-1 >= 0 && map[y][x-1] == 1 && !visited[y][x-1]) dir = 2;
